@@ -7,7 +7,7 @@ function generatePassword($length) {
     $charCount = strlen($chars);
 
     for ($i = 0; $i < $length; $i++) {
-        $randomChar = $chars[rand(0, $charCount - 1)];
+        $randomChar = $chars[rand(0, $charCount-1)];
         $password .= $randomChar;
     }
 
@@ -15,5 +15,5 @@ function generatePassword($length) {
 }
 
 $password = generatePassword(12);
-echo $password;
+echo "The password is: $password";
 ?>
